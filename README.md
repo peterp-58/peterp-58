@@ -14,16 +14,21 @@ THe project is currently broken down to 7 subsections.
 1. Uploading and setting up the Polish Dataset
 2. Variable Additions
 3. Initial Descriptive Analysis
-4. Approach
-5. Preparing to model
-6. Performance Metrics
-7. Spliting Datasets into respective Years
+4. Spliting Datasets into respective Years+
+5. Approach
+6. Preparing to model
+7. Models
+8. Performance Metrics
+
 
 
 Progress : 
-As of July 2nd, an inital run of the models were performed with the features selected based on "why do companies go bankrupt". THe first run did not yield postive results, which 
-leads me to move on to next phase, which is to split the datasets into the years. There are 5 years and i will split into 5 datasets. 
+As of July 7th, the dataset was broken into their respective years. Before prepare the data for analysis, I've added features that would help determine bankrupcy in companies. Using the existing data, I created new ratios, such as Financial Leverage, Cash to Interest etc. In preparation of which features to select, I examined their signaficances and importance using logistic regression test and random forest. Both test provided a top 10 and based on knowledge, I chose random forest, as they resembled closly to the the objective of "why companies go bankrupt", as well as the features are not highly correlated with one another. To add, both test did result in similar features. i did choose to run a  non-parametric test as all the features are not normally distributed, however the final features selectation that was given were highly correlated with one another and determiend it was not adquate to be selected. 
 
-Based on inital review of the results. The confusion matrix shows that the models have missed a good chunk of the bankrupt companies. Logistic regression did not pick up any. 
+This was done for each year and each year has different features. A few features are common accross the years, which will be investigated before the project is finsihed. 
 
-The pdf, initial code provides a details to each of the steps above, except for #7, which will be the next phase to work on
+I did run the datesets using only one set of features accross all the years, however the peformance was not as good, as individually selecting the features for each year. 
+
+At this point, the Adaboost is currently showing the best results for specificity. 
+
+
