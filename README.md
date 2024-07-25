@@ -30,10 +30,10 @@ THe code was also changed to show the true postive as 1, instead of 0, hence Spe
 
 ALthough more performance metrics were added, I only focused on the Precion, Recall and F1 Score, as i believed these are suitable for different stakeholders: 
 
--  Precison: If the stakeholder is a rating agency, they would need a more balanced approach. They would want to ensure that both Precision and Recall are minimized, hence the F1 Score is important in this case, as it takes a harmonic average of both precision and recall.
--  Recall: an asset management firm, could utilize this model to avoid investing or holding bankrupt companies in their portfolios. A false negative to this stakeholder can lead to monetary loss, so having a high recall is beneficial to this stakeholder.
--  F1 Score: If the stakeholder is a bank, then Precision would be more important, as a bank would want to limit the amount of false positives, to maximize loan growth and revenue. 
-
+-  Precison:If the stakeholder is a bank, then Precision would be more important, as a bank would want to limit the amount of false positives, to maximize loan growth and revenue. 
+ -  Recall: an asset management firm, could utilize this model to avoid investing or holding bankrupt companies in their portfolios. A false negative to this stakeholder can lead to monetary loss, so having a high recall is beneficial to this stakeholder.
+-  F1 Score: If the stakeholder is a rating agency, they would need a more balanced approach. They would want to ensure that both Precision and Recall are minimized, hence the F1 Score is important in this case, as it takes a harmonic average of both precision and recall.
+  
 To conclude, based on performance metrics of the three, the following models are the best predictors: 
 
 -	Precision: Random Forest  
